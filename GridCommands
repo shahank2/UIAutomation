@@ -1,0 +1,9 @@
+Node Launch: java -Dwebdriver.chrome.driver="C:/Selenium/driver/chromedriver.exe" -Dwebdriver.ie.driver="C:/Selenium/driver/IEDriverServer.exe" -jar selenium-server-standalone.jar -role node -port 5555 -hub http://localhost:4444/grid/register  -browser browserName=firefox,platform=WINDOWS,maxInstances=5
+
+C:/Selenium/driver/ --> Path on local machine where IE and Chrome driver.exe are kept
+
+Grid launch: java -jar selenium-server-standalone.jar -role hub -port 4444
+
+To launch Grid Place selenium-server-standalone.jar at same path where chrome and IE drivers are kept C:/Selenium/driver/
+
+Open cmd prompt --> go to location C:/Selenium/driver and then fire the command java -jar selenium-server-standalone.jar -role hub -port 4444

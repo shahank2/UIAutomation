@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite verbose="1" name="xxxx">
+    <listeners>
+        <listener class-name="com.wrapper.SendEmailListener"/>
+    </listeners>
+    <test name="Regression">
+        <classes>
+            <class name="com.runner.RegressionTest"/>
+        </classes>
+    </test>
+</suite>
